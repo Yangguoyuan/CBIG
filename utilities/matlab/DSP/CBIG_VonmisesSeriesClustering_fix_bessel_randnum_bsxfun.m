@@ -207,5 +207,6 @@ if (~isempty(strfind(fmri_name, '.nii.gz')))
     fmri.vol = [];
 else
     load(fmri_name);
-    vol = profile_mat;
+    %vol = profile_mat;
+	vol = vol.profile_mat;
 end
